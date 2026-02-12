@@ -1,13 +1,19 @@
+Pin = "1234"
+saldo = 1200
 
 def verificar_pin():
-
-    return True
-
+    print ("Verificacion")
+    intento = input("ingrese su pin ")
+    if intento == Pin:
+        print("su pin es verdadero, bienvenido")
+        return True
+    else:
+        print("su pin es incorrecto")
+        return False
 
 def consultar_saldo(saldo_actual):
-
-    print(f"Lógica de consulta pendiente...")
-
+    print("Consultar saldo")
+    print("Su saldo actual es ${saldo}")
 
 
 def depositar_dinero(saldo_actual):
