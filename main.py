@@ -31,8 +31,21 @@ def depositar_dinero(saldo_actual):
 
 
 def retirar_dinero(saldo_actual):
+    print("Realizar el retiro")
+    monto= float (input("¿cuanto dinero desea retirar?"))
+    if monto>saldo:
+        print("error: saldo insuficiente.")
+        return saldo
+    elif monto <=0:
+        print("error: Ingrese un monto valido.")
+        return saldo
+    else:
+        nuevo_saldo = saldo - monto
+        print("se ha realizado correctamente el $ {monto}.")
+        return nuevo_saldo
 
-    return saldo_actual
+
+   
 
 
 def cajero():
