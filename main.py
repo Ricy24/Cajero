@@ -13,7 +13,7 @@ def verificar_pin():
 
 def consultar_saldo(saldo_actual):
     print("Consultar saldo")
-    print("Su saldo actual es ${saldo}")
+    print(f"Su saldo actual es: ${saldo_actual}" )
 
 
 def depositar_dinero(saldo_actual):
@@ -32,16 +32,16 @@ def depositar_dinero(saldo_actual):
 
 def retirar_dinero(saldo_actual):
     print("Realizar el retiro")
-    monto= float (input("¿cuanto dinero desea retirar?"))
-    if monto>saldo:
+    monto_Retirar= float (input("¿cuanto dinero desea retirar?"))
+    if monto_Retirar>saldo:
         print("error: saldo insuficiente.")
         return saldo
-    elif monto <=0:
+    elif monto_Retirar <=0:
         print("error: Ingrese un monto valido.")
         return saldo
     else:
-        nuevo_saldo = saldo - monto
-        print("se ha realizado correctamente el $ {monto}.")
+        nuevo_saldo = saldo - monto_Retirar
+        print(f"se ha realizado correctamente el $ {monto_Retirar}.")
         return nuevo_saldo
 
 
