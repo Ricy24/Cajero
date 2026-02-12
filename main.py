@@ -14,13 +14,14 @@ def depositar_dinero(saldo_actual):
 
     print("Realizar Deposito")
     monto = float(input("Cuanto Dinero Quiere Depositar? $"))
-    if monto >0:
-        nuevo_saldo = saldo + monto
-        print("Exito En Transaccion De Monto{monto}")
+    if monto > 0:
+        nuevo_saldo = saldo_actual + monto
+        print(f"Exito En Transaccion De Monto {monto}")
         return nuevo_saldo
-    else: 
-        print("error en la transaccion el monto 0.")
-        return saldo
+    else:
+        print("Error en la transaccion, el monto debe ser mayor a 0.")
+        return saldo_actual
+
 
 
 def retirar_dinero(saldo_actual):
