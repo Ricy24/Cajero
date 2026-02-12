@@ -1,40 +1,25 @@
-# --- DATOS INICIALES (Para que el programa funcione) ---
-saldo = 1000  # Saldo inicial de prueba
-pin_correcto = "1234"
 
-# ==========================================
-# ESTUDIANTE 1: Autenticación y Seguridad
-# ==========================================
 def verificar_pin():
-    # TODO: Pedir al usuario su PIN y comparar con pin_correcto
-    # Debería devolver True si es correcto, False si no.
-    print("Lógica de PIN pendiente...")
+
     return True
 
-# ==========================================
-# ESTUDIANTE 2: Consultas y Saldo
-# ==========================================
+
 def consultar_saldo(saldo_actual):
-    # TODO: Mostrar el saldo actual en pantalla con un mensaje amigable
+
     print(f"Lógica de consulta pendiente...")
 
-# ==========================================
-# ESTUDIANTE 3: Depósitos (Ingreso de dinero)
-# ==========================================
+
+
 def depositar_dinero(saldo_actual):
-    # TODO: Pedir monto a ingresar, sumarlo al saldo y devolver el nuevo saldo
-    print("Lógica de depósito pendiente...")
+
     return saldo_actual
 
-# ==========================================
-# ESTUDIANTE 4: Retiros (Salida de dinero)
-# ==========================================
+
 def retirar_dinero(saldo_actual):
-    # TODO: Pedir monto, validar que tenga saldo suficiente y restar
-    print("Lógica de retiro pendiente...")
+
     return saldo_actual
 
-# --- FLUJO PRINCIPAL DEL PROGRAMA ---
+
 def cajero():
     global saldo
     print("¡Bienvenido al Cajero Automático Estudiantil!")
